@@ -262,12 +262,14 @@ Buried in the rubble of the kobolds’ nest are \textbf{50 copper pieces}.
      \monstersection{Actions}
      \begin{monsteraction}[Dagger]
          \textit{Melee Weapon Attack:} +4 to hit, reach 5 ft., one target.
+
          \textit{Hit:} 4 (1d4 + 2) piercing damage.
      \end{monsteraction}
 
      \begin{monsteraction}[Sling]
          \textit{Ranged Weapon Attack:} +4 to hit, range 30/120 ft.,
          one target. 
+
          \textit{Hit:} 4 (1d4 + 2) bludgeoning damage.
      \end{monsteraction}
 \end{monsterbox}
@@ -301,7 +303,7 @@ There is no monster or treasure in the room.
     cleaning or repair.
 \end{quotebox}
 
-Hidden in the rags is a spitting cobra.  It will only attack if
+Hidden in the rags is a poisonous snake.  It will only attack if
 disturbed, otherwise it will remain quiet as it is sleeping.
 
 The green fungus will leave a horrible, sickening, skunk-like smell on
@@ -309,6 +311,44 @@ whatever comes in contact with it. The smell will linger for 3-18 days.
 \textbf{A small fungus encrusted gold ring} is at the bottom of the
 fungus. If the ring is cleaned, players will discover the initials A. E.
 S. carved into it.
+
+\begin{monsterbox}{Poisonous Snake}
+    \textit{Tiny beast, unaligned}\\
+    \hline
+    \basics[%
+        armorclass = 13,
+        hitpoints  = 2 (1d4),
+        speed      = {30 ft., swim 30 ft.}
+    ]
+    \hline
+    \stats[
+        STR = \stat{2},
+        DEX = \stat{16},
+        CON = \stat{11},
+        INT = \stat{1},
+        WIS = \stat{10},
+        CHA = \stat{3}
+    ]
+    \hline
+    \details[
+        senses = {blindsight 10 ft., passive Perception 10},
+        languages = {---},
+        challenge = {1/8 (25 XP)},
+    ]
+    \hline
+    \\[1mm]
+     \monstersection{Actions}
+     \begin{monsteraction}[Bite]
+         \textit{Melee Weapon Attack:} +5 to hit , reach 5 ft., one
+         target.
+
+         \textit{Hit:} 1 piercing damage, and the target must make a DC
+         10 Constitution saving throw, taking 5 (2d4) poison damage on a
+         failed save, or ha lf as much damage on a successful one.
+     \end{monsteraction}
+
+\end{monsterbox}
+
 
 
 
