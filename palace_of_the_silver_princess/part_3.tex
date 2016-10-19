@@ -1,0 +1,315 @@
+\documentclass[palace_of_the_silver_princess]{subfiles}
+
+\begin{document}
+\fontfamily{ppl}\selectfont
+\clearpage
+
+\twocolumn[{\section{Part 3: Key To The Entrance Level}}]
+\markright{Part 3: Key To The Entrance Level}
+
+\subsubsection{1}
+\begin{quotebox}
+    The entrance way seems to be impassable. A massive and
+    foreboding double portcullis blocks the entryway of a 30’
+    wide corridor. A breeze is gently blowing from the palace
+    corridor and it carries with it the dust of decayed stone
+    and the smell of decaying bodies. Occasionally sounds of
+    pain, fright, and hunger can be heard, but they are far away
+    and sometimes muffled, so that all that may be heard is a
+    short piercing scream and then total silence.
+\end{quotebox}
+
+Due to the width of the corridor and the natural lighting (be it
+sunlight or moonlight), vision is clear to the end of the
+corridor, at which point two openings, both leading south, and
+also blocked by bars, can be seen.
+
+The party cannot see what is beyond the two openings. Sounds
+coming from deep in the palace can be heard every few minutes.
+Once inside the party will hear, just beyond the double
+portcullis, four enchanted voices. One emits a faraway piercing
+scream that is soon muffled, the second enchanted voice imitates
+someone in pain, the third one screams in fright and the last
+one wails in hunger.
+
+There is no monster or treasure in this area.
+
+\subsubsection{1A}
+\begin{quotebox}
+    Two passageways can be seen here. Each is behind a
+    double portcullis. The first one leads south, while
+    the second extends west.
+\end{quotebox}
+
+It will take a total of 20 strength points to raise
+either of these portcullises.
+
+There is no monster or treasure in this area.
+
+\subsubsection{1B}
+\begin{quotebox}
+    There are two passageways here blocked by a double portcullis. One
+    of the passages leads south, the other east. Beyond 15’, down either
+    passage, vision is impaired and nothing but blackness can be seen
+    (this applies to the other passage as well). The south passage way
+    seems to be drier than the east one. The eastern passageway has a
+    hint of moisture in the air and dampness can be felt on the wall
+    just inside the portcullis.
+\end{quotebox}
+
+There is no monster or treasure in this area.
+
+\subsubsection{1C}
+\begin{quotebox}
+    The walls of this room are collapsing. Moisture clings to everything
+    and purple moss grows everywhere throughout the room. Torches
+    flicker and sputter as if they are not getting enough oxygen to
+    burn. The air feels heavy and hard to breathe. A sweet smell fills
+    the room and gets stronger as time passes.
+\end{quotebox}
+
+The \textbf{purple moss} is a type of plant that thrives on moisture and
+flesh.  The sweet smell the party has detected is a sleeping gas
+produced by the plant. Once the victim is asleep the moss will quickly
+cover the body and devour it in less than an hour. It then hides the
+bones of its dinner by covering them and soon they become
+indistinguishable from any other normal mound of moss. Each player will
+have to make a successful \textbf{DC 10 Constitution saving throw} in
+order to avoid being affected by the sleep gas.  The purple moss cannot
+be harmed except by normal or magical fire.
+
+There is no treasure in this area.
+
+% You can optionally not include the background by saying
+% begin{monsterboxnobg}
+\begin{monsterbox}{Purple Moss}
+    \textit{Medium plant, unaligned}\\
+    \hline
+    \basics[%
+        armorclass = 5,
+        hitpoints  = 18 (4d8),
+        speed      = 5 ft
+    ]
+    \hline
+    \stats[
+        STR = \stat{3},
+        DEX = \stat{1},
+        CON = \stat{10},
+        INT = \stat{1},
+        WIS = \stat{3},
+        CHA = \stat{1}
+    ]
+    \hline
+    \details[
+        languages = {---},
+        challenge = {1/4},
+        damagevulnerabilities = {fire},
+    ]
+    \hline
+    \\[1mm]
+    \begin{monsteraction}[Sleeping gas]
+        A creature within 30 ft. of the moss must make a successful DC
+        10 Constitution saving throw or fall asleep.
+    \end{monsteraction}
+    % \monstersection{Actions}
+    % \begin{monsteraction}[Generate text]
+    % This one can generate tremendous amounts of text! 
+    % \end{monsteraction}
+\end{monsterbox}
+
+\subsubsection{1D}
+\begin{quotebox}
+    This huge cave area is filled with the sweet smell of fresh water.
+    The source is obviously a rather large grey stone pool of water that
+    almost covers the entire floor of the cavern. Occasionally bubbles
+    rise to the surface of the water, but apart from that the water is
+    quiet. A small ledge circles one end of the pool. This ledge is wide
+    enough for one fully armored person to inch around the pool to the
+    other side where an opening can be seen.
+\end{quotebox}
+
+If the party disturbs the water, 12 \textbf{bubbles} will rise to the
+surface to defend their lair. The bubbles will attempt to surprise the
+party by rising to the surface all at once.  The pool is 15’ deep in its
+deepest point, and 4’ deep at its shallowest point.  If the victim
+cannot be saved, the bubble will expel the dead victim and rise to the
+surface to attack again. The body, unless armored, will float to the
+surface.
+
+\begin{monsterbox}{Bubble}
+    \textit{Medium construct, unaligned}\\
+    \hline
+    \basics[%
+        armorclass = 9,
+        hitpoints  = 2,
+        speed      = 30 ft.
+    ]
+    \hline
+    \stats[
+        STR = \stat{1},
+        DEX = \stat{5},
+        CON = \stat{10},
+        INT = \stat{1},
+        WIS = \stat{1},
+        CHA = \stat{1}
+    ]
+    \hline
+    \details[
+        languages = {---},
+        challenge = {1/4},
+    ]
+    \hline
+    \\[1mm]
+    %\begin{monsteraction}[Sleeping gas]
+    %    A creature within 30 ft. of the moss must make a successful DC
+    %    10 Constitution saving throw or fall asleep.
+    %\end{monsteraction}
+     \monstersection{Actions}
+     \begin{monsteraction}[Paralyze]
+         The target must succeed on a DC 13 Constitution saving throw or
+         be paralyzed.  If a bubble manages to successfully paralyze
+         someone, it will engulf that victim and then sink back down to
+         the bottom of the pool.
+
+         The victim will suffocate in 2-5 (1d4 + 1) rounds unless someone
+         manages to kill the enclosing bubble.
+     \end{monsteraction}
+\end{monsterbox}
+
+If the party manages to successfully kill all the bubbles, their
+treasure may be found at the deepest point of the pool. \textbf{A small
+bag of 133 gold pieces and one silver wolf-head ring (value: 33 gold
+pieces)} will be found if the pool is searched.
+
+Stairs lead down the passageway from the pool to a dead end. This area
+may be opened up by the DM.
+
+\begin{quotebox}
+    This small rectangular cave opens up at the base of long steep
+    stairs. Red coarse sand surrounds a small grey pool of water. The
+    ledge around the water is wide enough for one fully armored person
+    to walk with ease.
+\end{quotebox}
+
+The sand is colored red, and if the party rinses the sand they will
+discover that it is normal coarse sand but once dry becomes red again.
+The water does not contain any monsters, but if the party examines the
+pool carefully, they will find that it is spring fed. The drain appears
+to be near the southern end of the pool. If this is plugged and the pool
+is allowed to flood, the adventurers will discover that the cave floor
+gently slopes to the south. After several hours, a steady stream will
+appear. After several days, the entire basin at the base of the southern
+stairs will be completely flooded. (If the party does block the drain,
+note it for future reference.)
+
+\subsubsection{1F}
+
+This is an empty room. The DM may wish to insert an encounter of his
+or her own choosing here or stock the room with valueless items designed
+to waste a party’s time. This also applies to the other empty rooms
+provided throughout this module.
+
+\subsubsection{2}
+
+\begin{quotebox}
+    Reed pens, dried ink wells. and hundreds of scraps of paper litter
+    this large room. There are several huge oak tables overturned near
+    the southeast corner. This room appears to have been some kind of
+    study, classroom or library. There are no books or intact scrolls
+    anywhere to be seen.
+\end{quotebox}
+
+Hidden behind the tables is a family of five kobolds.  If the party
+decides to search the room, or they discover the kobolds, the kobolds
+will fight. Otherwise, they will remain hidden until the danger passes.
+Buried in the rubble of the kobolds’ nest are \textbf{50 copper pieces}.
+
+\begin{monsterbox}{Kobold}
+    \textit{Small humanoid (kobold), lawful evil}\\
+    \hline
+    \basics[%
+        armorclass = 12,
+        hitpoints  = 5 (2d6 - 2),
+        speed      = 30 ft.
+    ]
+    \hline
+    \stats[
+        STR = \stat{7},
+        DEX = \stat{15},
+        CON = \stat{9},
+        INT = \stat{8},
+        WIS = \stat{7},
+        CHA = \stat{8}
+    ]
+    \hline
+    \details[
+        senses = {darkvision 60 ft., passive Perception 8},
+        languages = {Common, Draconic},
+        challenge = {1/8 (25 XP)},
+    ]
+    \hline
+    \\[1mm]
+    \begin{monsteraction}[Sunlight Sensitivity]
+        While in sunlight, the kobold has disadvantage on attack rolls,
+        as well as on Wisdom (Perception) checks that rely on sight.
+    \end{monsteraction}
+
+    \begin{monsteraction}[Pack Tactics]
+        The kobold has advantage on an attack roll against a creature
+        if at least one ofthe kobold's allies is within 5 feet of the
+        creature and the ally isn't incapacitated.
+    \end{monsteraction}
+     \monstersection{Actions}
+     \begin{monsteraction}[Dagger]
+         \textit{Melee Weapon Attack:} +4 to hit, reach 5 ft., one target.
+         \textit{Hit:} 4 (1d4 + 2) piercing damage.
+     \end{monsteraction}
+
+     \begin{monsteraction}[Sling]
+         \textit{Ranged Weapon Attack:} +4 to hit, range 30/120 ft.,
+         one target. 
+         \textit{Hit:} 4 (1d4 + 2) bludgeoning damage.
+     \end{monsteraction}
+\end{monsterbox}
+
+\subsubsection{3}
+
+\begin{quotebox}
+    Rotten bags of grain, old brooms, and three decaying beer barrels
+    full of vinegar are all that remain in this shelved room. It appears
+    to once have been a store room. It is not obvious as to whether the
+    inhabitants left the grain and beer because they could not transport
+    them or because they had no choice but to leave them.
+\end{quotebox}
+
+If the players examine the barrels they will discover that one is full
+of pickled snakes. If they touch the sacks of grain, the material, due
+to its age, will come off in their hands in small patches. The grain
+itself has a horrible smell, as does the vinegar in the barrels.
+
+There is no monster or treasure in the room.
+
+\subsubsection{4}
+
+\begin{quotebox}
+    This area was a kitchen. There are many wooden trenchers, spoons,
+    and knives scattered about the tables and floors. Three large tubs
+    full of water sit on stools near the fireplace. One is full of green
+    fungus. A pile of grease soaked rags lies in one corner of the room
+    near a keg of dried beans. Pots and other assorted dishes and
+    cooking utensils are also lying strewn about the room and are beyond
+    cleaning or repair.
+\end{quotebox}
+
+Hidden in the rags is a spitting cobra.  It will only attack if
+disturbed, otherwise it will remain quiet as it is sleeping.
+
+The green fungus will leave a horrible, sickening, skunk-like smell on
+whatever comes in contact with it. The smell will linger for 3-18 days.
+\textbf{A small fungus encrusted gold ring} is at the bottom of the
+fungus. If the ring is cleaned, players will discover the initials A. E.
+S. carved into it.
+
+
+
+\end{document}
