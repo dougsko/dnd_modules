@@ -1,4 +1,4 @@
-\documentclass[10pt,twoside,twocolumn]{book}
+\documentclass[10pt,twoside,twocolumn]{article}
 \usepackage[bg-print]{dnd} % Options: bg-a4, bg-letter, bg-full, bg-print.
 \usepackage[toc]{multitoc}
 \usepackage{subfiles}
@@ -85,7 +85,11 @@
 \end{minipage} \end{onecolumn} \end{titlepage} \clearpage
 
 \renewcommand{\cfttoctitlefont}{\color{titlered}\normalfont\scshape\Huge}
-\fancypagestyle{plain}{}\setcounter{tocdepth}{2}\tableofcontents
+\fancypagestyle{plain}{}
+\setcounter{tocdepth}{2}
+\begin{onecolumn}
+\tableofcontents
+\end{onecolumn}
 
 \subfile{part_1}
 \subfile{part_2}
