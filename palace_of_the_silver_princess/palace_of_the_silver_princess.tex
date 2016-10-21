@@ -2,9 +2,9 @@
 \usepackage[bg-print]{dnd} % Options: bg-a4, bg-letter, bg-full, bg-print.
 \usepackage[toc]{multitoc}
 \usepackage{subfiles}
-\usepackage{tocloft}
 \usepackage[utf8]{inputenc}
 \usepackage{float}
+\usepackage{imakeidx}
 
 \pdfinfo{
 	/Author (Jean Wells)
@@ -12,15 +12,8 @@
 	/Keywords (D&D;Adventure)
 }
 
-%\fancyfoot[LO]{\vspace{-0.1cm}
-%\footnotesize{Not for resale. Permission granted to print or photocopy this document for personal use only. TITLE}}
-
-%\fancyfoot[RE]{
-%\footnotesize{\vspace{-0.15cm}Not for resale. Permission granted to print or photocopy this document for personal use only. TITLE}}
-
-% Reset footnote counter for each new page
-%\usepackage{perpage} %the perpage package
-%\MakePerPage{footnote} %the perpage package command
+\makeindex[intoc,name=monsters,title=Monsters]
+\makeindex[intoc,name=magic,title=Magic Items]
 
 % Start document
 \begin{document}
@@ -89,19 +82,20 @@
 
 \end{minipage} \end{onecolumn} \end{titlepage} \clearpage
 
-\renewcommand{\cfttoctitlefont}{\color{titlered}\normalfont\scshape\Huge}
 \fancypagestyle{plain}{}
 \setcounter{tocdepth}{2}
 \begin{onecolumn}
-\tableofcontents
+    \tableofcontents
 \end{onecolumn}
 
 \subfile{part_1}
 \subfile{part_2}
 \subfile{part_3}
-\subfile{part_a}
-\subfile{part_b}
-\subfile{part_c}
+\subfile{part_4}
+\subfile{maps}
+
+\printindex[monsters]
+\printindex[magic]
 
 % End document
 \end{document}
