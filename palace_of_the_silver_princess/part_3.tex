@@ -387,6 +387,7 @@ These keys have no cash value but will open the cells located at
 
 \subtitlesection{Wand of Secrets}
 {Wand, uncommon}
+\index[magic]{Wand of Secrets}
 
 The wand has 3 charges. While holding it. You can use an action to
 expend 1 of its charges, and if a secret door or trap is within 30 feet
@@ -769,8 +770,9 @@ always glow when not sheathed. There is no sheath for it in the room,
 nor will it fit into a sheath not specifically designed for it. The
 magic properties of the sword are as follows:
 
-\subtitlesection{Glowing Longsword, +1}
+\subtitlesection{+1 Glowing Longsword}
 {Weapon (any), uncommon}
+\index[magic]{Glowing Longsword}
 
 This sword glows while unsheathed.  You have a bonus to attack and damage rolls made with this magic weapon.
 
@@ -797,7 +799,6 @@ This sword glows while unsheathed.  You have a bonus to attack and damage rolls 
     This open area is a small worship alcove. On a raised platform
     along the western wall is a beautifully carved statue of a woman
     holding a small girl child in her lap. The woman is smiling down at
-    the child, who plays with a small ball clutched in her hands. The
     inscription on the base of the statue reads “The secret treasure of
     one’s heart can be found in love.”
 \end{quotebox}
@@ -895,6 +896,9 @@ The whimpering is only the wind blowing through the rubble.
 \\
 \\
 
+%\begin{figure*}[hb]
+%    \includegraphics[width=\textwidth]{img/wand.png}
+%\end{figure*}
 \includegraphics[width=\columnwidth]{img/wand.png}
 
 \subsubsection{20}
@@ -984,7 +988,7 @@ Since the trap door is sand covered there is only 1 chance in 8 (DC 15
 Perception check) of being able to detect it before. Anyone falling in
 will take 1d6 points of damage.
 
-Also trapped in the pit is a \textbf{giant rat} who fell into it and is now
+Also trapped in the pit is a \textbf{baric} who fell into it and is now
 nearly dead from starvation. Due to the fact that it is half starved,
 it will attack at a -2 on all “to hit” rolls.
 
@@ -992,8 +996,10 @@ Hidden in the sand in the north-western corner of the room is a small
 sack of mixed coins (10 gp, 8 sp and 9 cp) and a jade ring with dragons
 carved into it (value 250 gp). The ring is not magical.
 
-\begin{monsterbox}{Giant Rat}
-    \index[monsters]{Giant Rat}
+\includegraphics[width=\columnwidth]{img/baric.png}
+
+\begin{monsterbox}{Baric}
+    \index[monsters]{Baric}
     \textit{Small beast, unaligned}\\
     \hline
     \basics[%
@@ -1024,7 +1030,7 @@ carved into it (value 250 gp). The ring is not magical.
     \end{monsteraction}
 
     \begin{monsteraction}[Pack Tactics]
-        The rat has advantage on an attack roll against a creature if at
+        The baric has advantage on an attack roll against a creature if at
         least one of the rat's allies is within 5 feet of the creature
         and the ally isn't incapacitated.
     \end{monsteraction}
@@ -1091,7 +1097,9 @@ death.
 \\
 \\
 
-\includegraphics[width=\columnwidth]{img/travis.png}
+\begin{figure*}[ht]
+    \includegraphics[width=\textwidth]{img/travis.png}
+\end{figure*}
 
 \subsubsection{26}
 \begin{quotebox}
@@ -1206,8 +1214,9 @@ small wooden case. This case contains Travis’ personal treasure;
 value is 400 gp)}. The valuables he has removed from his victims are
 hidden in room \textbf{EL 32D}.
 
-\subtitlesection{Throwing Knife, +2}
+\subtitlesection{+2 Throwing Knife}
 {Weapon (any), uncommon}
+\index[magic]{Throwing Knife}
 
 You have a bonus to attack and damage rolls made with this knife when it
 is thrown.
@@ -1260,8 +1269,54 @@ The last one is filled with swords, daggers, and helms. Only one of the
 swords is magical, at a bonus of + 1. It is indistinguishable from the
 rest of the swords unless a detect magic is cast on them.
 
-\subtitlesection{Shortsword, +1}
+\includegraphics[width=\columnwidth]{img/marmoset.png}
+
+\begin{monsterbox}{Giant Marmoset}
+    \index[monsters]{Giant Marmoset}
+    \textit{Medium beast, unaligned}\\
+    \hline
+    \basics[%
+        armorclass = 15,
+        hitpoints  = 13 (3d8 + 3),
+        speed      = {40~ft., climb 30~ft.}
+    ]
+    \hline
+    \stats[
+        STR = \stat{11},
+        DEX = \stat{15},
+        CON = \stat{13},
+        INT = \stat{2},
+        WIS = \stat{11},
+        CHA = \stat{11}
+    ]
+    \hline
+    \details[
+        senses = {passive Perception 10},
+        languages = {Common},
+        challenge = {1 (200 XP)},
+    ]
+    \hline
+    \\[1mm]
+    \monstersection{Actions}
+    \begin{monsteraction}[Tail Spike]
+        \textit{Melee Weapon Attack:} +4 to hit, reach 5 ft., one
+        target.
+
+        \textit{Hit:} 2 (1d4) piercing damage.
+    \end{monsteraction}
+
+    \begin{monsteraction}[Bite]
+        \textit{Melee Weapon Attack:} +4 to hit, reach 5 ft., one
+        target.
+
+        \textit{Hit:} 4 (1d8) piercing damage.
+    \end{monsteraction}
+\end{monsterbox}
+
+
+\subtitlesection{+1 Shortsword}
 {Weapon (any), uncommon}
+\index[magic]{Shortsword}
 
 You have a bonus to attack and damage rolls made with this magic weapon.
 
@@ -1279,8 +1334,9 @@ successfully search or detect for secret doors on the statues in order
 to find the wand. The wand has only 3 charges left, and looks the same
 as any other wand.
 
-\subtitlesection{Wand of Light, +1}
+\subtitlesection{Wand of Light}
 {Wand, rare}
+\index[magic]{Wand of Light}
 
 This wand can glow bright enough to light up a 100 sq. ft. for 1 hour
 per charge.
