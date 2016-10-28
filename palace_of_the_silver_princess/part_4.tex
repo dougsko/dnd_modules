@@ -60,8 +60,7 @@ for a 1st level magic user (spells to be determined by the DM).
 		CHA = \stat{7}]
 	\hline
 	\details[
-        damageresistances = {bludgeoning, piercing, and slashing from
-        nonmagicalweapons that aren't adamantine},
+        damageresistances = {bludgeoning, piercing, and slashing from nonmagicalweapons that aren't adamantine},
         damageimmunities = {poison},
         conditionimmunities = {exhaustion, petrified, poisoned},
 		senses = {darkvision 60~ft., passive Perception 11},
@@ -1021,70 +1020,92 @@ and 15 bottles of Anterian Brandy (250 gp each).
     \textit{Medium humanoid (dwarf), lawful neutral}\\
 	\hline
 	\basics[
-		armorclass = {13},
-		hitpoints = {27 (5d8 + 5)},
+		armorclass = {16},
+		hitpoints = {26 (4d8 + 8)},
 		speed = {25~ft.}]
 	\hline
 	\stats[
-		STR = \stat{10},
-		DEX = \stat{10},
-		CON = \stat{12},
-		INT = \stat{13},
-		WIS = \stat{16},
-		CHA = \stat{13}]
+		STR = \stat{14},
+		DEX = \stat{11},
+		CON = \stat{14},
+		INT = \stat{11},
+		WIS = \stat{10},
+		CHA = \stat{9}]
 	\hline
 	\details[
-        skills = {Medicine +7, Persuasion +3, Religion +4},
-		senses = {passive Perception 13},
+		senses = {passive Perception 10},
         languages = {Common, Dwarvish},
-		challenge = {2 (450 XP)}]
+		challenge = {1 (200 XP)}]
 	\hline
-    \begin{monsteraction}[Cantrips]
-        Fear, darkness
-    \end{monsteraction}
-
 	\monstersection{Actions}
 
-    \begin{monsteraction}[Mace]
-        \textit{Melee Weapon Attack:} +2 to hit, reach 5ft., one target. 
+    \begin{monsteraction}[War Pick]
+        \textit{Melee Weapon Attack:} +4 to hit, reach 5ft., one target. 
 
-        \textit{Hit:} 3 (1d6) bludgeoning damage.
+        \textit{Hit:} 6 (1d8 + 2) piercing damage
     \end{monsteraction}
 \end{monsterbox}
 
 \begin{monsterbox}{Aleigha}
     \index[monsters]{Aleigha}
-    \textit{Medium humanoid (werebear), lawful neutral}\\
+    \textit{Medium humanoid (human, shapechanger), neutral good}\\
 	\hline
 	\basics[
-		armorclass = {13},
-		hitpoints = {27 (5d8 + 5)},
-		speed = {25~ft.}]
+        armorclass = {10 in humanoid form, 11 (natural armor) in bear
+        and hybrid form},
+        hitpoints = {135 (18d8 +54)},
+        speed = {30~ft. (40!ft., climb 30~ft. in bear or hybrid form)}]
 	\hline
 	\stats[
-		STR = \stat{10},
+		STR = \stat{19},
 		DEX = \stat{10},
-		CON = \stat{12},
-		INT = \stat{13},
-		WIS = \stat{16},
-		CHA = \stat{13}]
+		CON = \stat{17},
+		INT = \stat{11},
+		WIS = \stat{12},
+		CHA = \stat{12}]
 	\hline
 	\details[
-        skills = {Medicine +7, Persuasion +3, Religion +4},
-		senses = {passive Perception 13},
-        languages = {Common, Dwarvish},
-		challenge = {2 (450 XP)}]
+        skills = {Perception +7},
+        damageimmunities = {bludgeoning, piercing, and slashing
+        damage from nonmagical weapons th at aren't silvered},
+		senses = {passive Perception 17},
+        languages = {Common (can't speak in bear form)},
+		challenge = {5 (1,800 XP)}]
 	\hline
-    \begin{monsteraction}[Cantrips]
-        Fear, darkness
+    \begin{monsteraction}[Shapechanger]
+        The werebear can use its action to polymorph into a Large
+        bear-humanoid hybrid or into a Large bear, or back into its true
+        form, which is humanoid. Its statistics, other than its size amd
+        AC, are the same in each form. Any equipment it is wearing or
+        carrying isn't transformed· It reverts to its true form if it dies.
     \end{monsteraction}
 
 	\monstersection{Actions}
 
-    \begin{monsteraction}[Mace]
-        \textit{Melee Weapon Attack:} +2 to hit, reach 5ft., one target. 
+    \begin{monsteraction}[Multiattack]
+        In bear form, the werebear makes two claw
+        attacks. In humanoid form, it makes two greataxe attacks. In
+        hybrid form, it can attack like a bear or a humanoid.
+    \end{monsteraction}
 
-        \textit{Hit:} 3 (1d6) bludgeoning damage.
+    \begin{monsteraction}[Bite (Bear or Hybrid Form Only)]
+        \textit{Melee Weapon Attack:} +7 to hit, reach 5 ft., one target.
+
+        \textit{Hit:} 15 (2d10 + 4) piercing damage.  If the target is a
+        humanoid, it must succeed on a DC 14 Constitution saving throw
+        or be cursed with were bear lycanthropy.
+    \end{monsteraction}
+
+    \begin{monsteraction}[Claw (Bear or Hybrid Form Only)]
+        \textit{Melee Weapon Attack:} +7 to hit, reach 5 ft., one target.
+
+        \textit{Hit:} 13 (2d8 + 4) slashing damage.
+    \end{monsteraction}
+
+    \begin{monsteraction}[Sword of Spartusia]
+        \textit{Melee Weapon Attack:} +7 to hit, reach 5 ft., one target.
+
+        \textit{Hit:} 10 (1d12 + 4) slashing damage.
     \end{monsteraction}
 \end{monsterbox}
 
@@ -1212,7 +1233,7 @@ were all fond of playing games. A meerschaum carved bowl pipe (30 gp)
 and an empty goblet lie on one side of the table, an empty wine glass
 and a peacock fan lie on the other side of the table.
 
-
+\includegraphics[width=\columnwidth]{img/goblet.png}
 
 
 
